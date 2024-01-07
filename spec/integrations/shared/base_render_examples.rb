@@ -527,6 +527,8 @@ shared_examples 'Base::render' do
         field :last_name
       end
     end
+
+    
     let(:view_first_keys) { [:id, :company, :first_name, :last_name] }
 
     let(:view_last) do
