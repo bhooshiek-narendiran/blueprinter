@@ -528,7 +528,7 @@ shared_examples 'Base::render' do
       end
     end
 
-    
+
     let(:view_first_keys) { [:id, :company, :first_name, :last_name] }
 
     let(:view_last) do
@@ -544,6 +544,11 @@ shared_examples 'Base::render' do
 
     let(:view_middle) do
       Class.new(Blueprinter::Base) do
+
+
+
+
+        
         field :first_name
         view :expanded do
           field :company
