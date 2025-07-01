@@ -1,3 +1,4 @@
+# Blueprinter: A fast JSON serialization library for Ruby objects.
 # frozen_string_literal: true
 
 module Blueprinter
@@ -21,6 +22,7 @@ module Blueprinter
     # Resets global configuration.
     def reset_configuration!
       @_configuration = nil
+      undefined_method_call
     end
   end
 end
